@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_3"
+        android:background="@color/colorVeryLightGray"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/margin_30"
+            android:layout_marginRight="@dimen/margin_30"
+            android:background="@color/colorRose"
+            android:gravity="center"
+            android:text="55% Cashback"
+            android:textAlignment="center"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/text_size_16"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/iM_image"
+            android:layout_width="150dp"
+            android:layout_height="175dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/margin_30"
+            android:layout_marginRight="@dimen/margin_30"
+            android:layout_marginTop="@dimen/margin_15"
+            android:scaleType="fitXY"
+            android:src="@drawable/images2_180" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_10"
+            android:background="@color/colorLightVoilet"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/padding_10">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/padding_10"
+                android:paddingRight="@dimen/padding_10">
+
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Self Assessment and Review"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/text_size_12" />
+
+                <TextView
+                    android:id="@+id/tv_writtenby"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="by Govind Rai"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/text_size_10" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center">
+
+                        <View
+                            android:layout_width="30dp"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="9dp"
+                            android:background="@color/colorWhite" />
+
+                        <TextView
+                            android:id="@+id/tv_price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="₹795"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="@dimen/text_size_12" />
+
+
+                    </FrameLayout>
+
+                    <TextView
+                        android:id="@+id/tv_actual"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="₹795"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/text_size_12" />
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/tv_effectiveprice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Effective Price: ₹395 "
+                    android:visibility="gone"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/text_size_12" />
+
+                <TextView
+                    android:id="@+id/tv_saveper"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Save 60%"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/text_size_12" />
+
+
+                <RatingBar
+                    android:id="@+id/ratingbar"
+                    style="?android:attr/ratingBarStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="@dimen/margin_8"
+                    android:numStars="5"
+                    android:progressTint="@color/colorStar"
+                    android:rating="5"
+                    android:stepSize="1.0" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/margin_5"
+                android:background="@color/colorVoiletdark"
+                android:gravity="center"
+                android:padding="6dp"
+                android:text="Buy Now"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/text_size_14" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

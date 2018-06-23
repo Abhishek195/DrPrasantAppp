@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/drbackground"
+    tools:context="com.aig.drprasantapp.auth.SignupActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/rect_circular_white"
+            android:hint="Name"
+            android:textColor="@color/colorWhite"
+            android:inputType="textPersonName"
+            android:textAlignment="center"
+            android:textColorHint="@color/colorWhite"
+            android:textSize="@dimen/text_size_16" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rect_circular_white"
+            android:hint="Contact Number"
+            android:textColor="@color/colorWhite"
+            android:inputType="phone"
+            android:textAlignment="center"
+            android:textColorHint="@color/colorWhite"
+            android:textSize="@dimen/text_size_16" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rect_circular_white"
+            android:hint="Email"
+            android:textColor="@color/colorWhite"
+            android:inputType="textEmailAddress"
+            android:textAlignment="center"
+            android:textColorHint="@color/colorWhite"
+            android:textSize="@dimen/text_size_16" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/rect_circular_white"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textAlignment="center"
+            android:textColorHint="@color/colorWhite"
+            android:textSize="@dimen/text_size_16" />
+
+        <Button
+            android:id="@+id/btn_register"
+            android:layout_width="220dp"
+            android:layout_height="47dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/rect_circular_filledwhite"
+            android:gravity="center"
+            android:text="Register"
+            android:textColor="@color/colorText"
+            android:textSize="@dimen/text_size_16" />
+
+
+        <LinearLayout
+            android:id="@+id/lI_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/text_size_14"
+                android:text="Alresdy have an account?Login"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorWhite"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/llFacebook"
+            android:layout_width="190dp"
+            android:layout_height="38dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/margin_15"
+            android:background="@drawable/rect_round_blue"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/btnLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/facebook" />
+
+            <TextView
+                android:id="@+id/tvFacebookName"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="-5dp"
+                android:background="@color/colorBlue"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="Facebook"
+                android:textColor="@android:color/white"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>
